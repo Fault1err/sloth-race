@@ -1,0 +1,262 @@
+body {
+    min-height: 100vh;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #EEE3CB;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    margin-top: 1%;
+    text-align: center;
+    color: #7C96AB;
+  }
+
+  h2 {
+    text-align: left;
+    margin-left: 5%;
+    color: #7C96AB;
+  }
+
+  h3 {
+    margin-left: 5%;
+    color: #7C96AB;
+  }
+
+  h4 {
+    align-self: center;
+    margin-left: 5%;
+    color: #7C96AB;
+    margin-left: 15px;
+    margin-right: 0;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #D7C0AE;
+    /* height: 100vh; */
+    position: relative;
+  }
+
+  svg {
+    width: 100px;
+  }
+
+  .sloth-wrapper {
+    filter: drop-shadow(0 0 0.75rem rgb(255, 254, 252));
+    /* border: 1px solid red; */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    position: absolute;
+  }
+
+  .winner-field {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #B7B7B7;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .view-btn {
+  margin-left: 1%;
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  color: #85586F;
+  border: 1px solid #576F72;
+  background-color: #FAFAFA;
+  padding: 5px 7px;
+  border-radius: 10px;
+  transition: 0.5s;
+  width: 8%;
+  /* width: 15%; for mediaqueries*/
+  }
+
+  button:hover {
+    background-color: #FDDCC4;
+    border: 1px solid #FDDCC4;
+  }
+
+  .view-btn-car {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    color: #85586F;
+    border: 1px solid #576F72;
+    background-color: #FAFAFA;
+    padding: 5px 7px;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* width: 30%; */
+    /* width: 15%; for mediaqueries*/
+    }
+
+  .view-btn-ab {
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    color: #85586F;
+    border: 1px solid #576F72;
+    background-color: #FAFAFA;
+    padding: 5px 7px;
+    border-radius: 10px;
+    transition: 0.5s;
+    /* width: 35%; */
+    /* width: 15%; for mediaqueries*/
+  }
+
+  button:disabled {
+    background-color: #9BABB8;
+  }
+  
+  .car-form {
+    height: 10%;
+  }
+
+  input {
+    margin-left: 1%;
+  }
+
+  .garage-field {
+    position: relative;
+  }
+
+  .win-win {
+    position: absolute;
+    top: 120px;
+    left: 38%;
+    /* background-color: #bda6b2; */
+    height: 30px;
+    padding: 20px;
+  }
+
+  .garage-els-wrapper {
+    /* border: 1px solid blue; */
+    height: 100%;
+  }
+
+  .garage-car-block {
+    /* border: 1px solid green; */
+    position: relative;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .garage-car-block::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Height of the line */
+    border-bottom: 2px dashed #967E76; /* Color of the line */
+  }
+
+  .garage-el-top {
+    display: flex;
+    height: 45px;
+  }
+
+  .garage-el-bot {
+    display: flex;
+    position: relative;
+    height: 43px;
+  }
+ 
+  .garage-name-wrapper {
+    width: 10%;
+  }
+
+  .tree-wrapper {
+    position: absolute;
+    right: 100px;
+    top: -22px;
+  }
+  
+  table {
+    margin-left: 5%;
+  }
+
+  th {
+    color: #967E76;
+    border: 1px solid;
+    padding: 5px 15px;
+    margin: 5px;
+  }
+
+  tr {
+    color: #967E76;
+    text-align: center;
+  }
+
+  td {
+    color: #967E76; 
+   padding: 5px;
+  }
+
+  @keyframes sloth-animation {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 91%;
+    }
+  }
+
+  .arrow-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: baseline;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 870px) {
+    h1 {
+      font-size: 15px;
+    }
+  
+    h2 {
+      font-size: 15px;
+    }
+  
+    h3 {
+      font-size: 10px;
+    }
+  
+    h4 {
+      font-size: 10px;
+    }
+
+    .view-btn {
+      font-size: 7px;
+      width: 15%;
+      }
+    
+    .view-btn-car {
+      width: 15%;
+      font-size: 7px;
+    }
+    
+    .view-btn-ab {
+    width: 15%;
+    font-size: 7px;
+    }
+  }
+  
